@@ -1,0 +1,277 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohamed Salah, Individual, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+K:\Udacity_Advanced\LED_Control_Project\LED_Control_Project.uvprojx
+Project File Date:  12/29/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(7): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.h(50): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(8): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../../../ECUAL/LED/LED.h(11): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../../../ECUAL/LED/../../MCAL/DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(8): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../../../ECUAL/LED/LED.h(12): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../../../ECUAL/LED/../../MCAL/PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(8): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../../../ECUAL/LED/LED.h(40): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(9): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/../../SERVICES/Config.h(18): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(41): warning: implicit conversion from enumeration type 'tLED_STATE_x' to different enumeration type 'Port_PinLevel' [-Wenum-conversion]
+                                LED_SetState(LED_USER_PORT,LED_USER_PORT_PIN,LED_STATE_ON);
+                                ~~~~~~~~~~~~                                 ^~~~~~~~~~~~
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(59): warning: implicit conversion from enumeration type 'tLED_STATE_x' to different enumeration type 'Port_PinLevel' [-Wenum-conversion]
+                                LED_SetState(LED_USER_PORT,LED_USER_PORT_PIN,LED_STATE_OFF);
+                                ~~~~~~~~~~~~                                 ^~~~~~~~~~~~~
+COTS/APPLICATION/LED_Control_APP/SERVICES/DISPLAY/DISPLAY.c(62): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling DISPLAY.c...
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(1): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(2): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/BLINKING/../SERVICES/DISPLAY/DISPLAY.h(50): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(3): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/BLINKING/../SERVICES/TIME/TIME.h(10): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/BLINKING/../SERVICES/TIME/../../../../MCAL/SYSTICK/SYSTICK.h(58): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(3): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/BLINKING/../SERVICES/TIME/TIME.h(22): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(5): warning: no previous extern declaration for non-static variable 'onTime' [-Wmissing-variable-declarations]
+uint8_t onTime = INITIAL_ON_VALUE;
+        ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t onTime = INITIAL_ON_VALUE;
+^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(6): warning: no previous extern declaration for non-static variable 'offTime' [-Wmissing-variable-declarations]
+uint8_t offTime = INITIAL_OFF_VALUE;
+        ^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t offTime = INITIAL_OFF_VALUE;
+^
+COTS/APPLICATION/LED_Control_APP/BLINKING/BLINKING.c(26): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+7 warnings generated.
+compiling BLINKING.c...
+COTS/MCAL/INTERRUPT/interrupt.c(1): warning: In file included from...
+COTS/MCAL/INTERRUPT/interrupt.h(5): warning: In file included from...
+COTS/MCAL/INTERRUPT/../DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/INTERRUPT/interrupt.c(1): warning: In file included from...
+COTS/MCAL/INTERRUPT/interrupt.h(6): warning: In file included from...
+COTS/MCAL/INTERRUPT/../PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/INTERRUPT/interrupt.c(1): warning: In file included from...
+COTS/MCAL/INTERRUPT/interrupt.h(32): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/INTERRUPT/interrupt.c(2): warning: In file included from...
+COTS/MCAL/INTERRUPT/../Utilities.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/INTERRUPT/interrupt.c(21): warning: 5 enumeration values not handled in switch: 'PORT_A', 'PORT_B', 'PORT_C'... [-Wswitch]
+                switch(interrupt_ConfigType->PortNum)
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+COTS/MCAL/INTERRUPT/interrupt.c(36): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling interrupt.c...
+COTS/MCAL/DIO/DIO.c(7): warning: In file included from...
+COTS/MCAL/DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/DIO/DIO.c(8): warning: In file included from...
+COTS/MCAL/DIO/../Utilities.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/DIO/DIO.c(64): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'Dio_PortLevelType' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        return Dio_GetAddress(PortId)->GPIODATA;
+        ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+COTS/MCAL/DIO/DIO.c(125): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+4 warnings generated.
+compiling DIO.c...
+COTS/MCAL/PORT/port.c(7): warning: In file included from...
+COTS/MCAL/PORT/port.h(10): warning: In file included from...
+COTS/MCAL/PORT/../DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/PORT/port.c(7): warning: In file included from...
+COTS/MCAL/PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/PORT/port.c(8): warning: In file included from...
+COTS/MCAL/PORT/../Utilities.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/MCAL/PORT/port.c(73): warning: implicit conversion from enumeration type 'const Port_PinLevel' to different enumeration type 'Dio_LevelType' [-Wenum-conversion]
+                        Dio_WriteChannel(ConfigPtr->PortNum,ConfigPtr->PortPin, ConfigPtr->PortPinLevelValue);
+                        ~~~~~~~~~~~~~~~~                                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+COTS/MCAL/PORT/port.c(73): warning: implicit conversion from enumeration type 'const Port_Pin_x' to different enumeration type 'Dio_ChannelType' [-Wenum-conversion]
+                        Dio_WriteChannel(ConfigPtr->PortNum,ConfigPtr->PortPin, ConfigPtr->PortPinLevelValue);
+                        ~~~~~~~~~~~~~~~~                    ~~~~~~~~~~~^~~~~~~
+COTS/MCAL/PORT/port.c(97): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling port.c...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(7): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.h(47): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(8): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../SERVICES/Config.h(18): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(9): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../../../ECUAL/BUTTON/BUTTON.h(10): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../../../ECUAL/BUTTON/../../MCAL/DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(9): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../../../ECUAL/BUTTON/BUTTON.h(11): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../../../ECUAL/BUTTON/../../MCAL/PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(10): warning: In file included from...
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/../../../../MCAL/INTERRUPT/interrupt.h(32): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/APPLICATION/LED_Control_APP/SERVICES/INPUT/INPUT.c(78): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling INPUT.c...
+COTS/ECUAL/BUTTON/BUTTON.c(7): warning: In file included from...
+COTS/ECUAL/BUTTON/BUTTON.h(10): warning: In file included from...
+COTS/ECUAL/BUTTON/../../MCAL/DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/BUTTON/BUTTON.c(7): warning: In file included from...
+COTS/ECUAL/BUTTON/BUTTON.h(11): warning: In file included from...
+COTS/ECUAL/BUTTON/../../MCAL/PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/BUTTON/BUTTON.c(10): warning: In file included from...
+COTS/ECUAL/BUTTON/../../MCAL/INTERRUPT/interrupt.h(32): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/BUTTON/BUTTON.c(34): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        Interrupt_ConfigType btnCnf = {PortId,pin};
+                             ^
+COTS/ECUAL/BUTTON/BUTTON.c(50): warning: implicit conversion from enumeration type 'Dio_LevelType' to different enumeration type 'tBTN_STATE' [-Wenum-conversion]
+        return Dio_ReadChannel(PortId,pin);
+        ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+COTS/ECUAL/BUTTON/BUTTON.c(50): warning: implicit conversion from enumeration type 'Port_Pin_x' to different enumeration type 'Dio_ChannelType' [-Wenum-conversion]
+        return Dio_ReadChannel(PortId,pin);
+               ~~~~~~~~~~~~~~~        ^~~
+COTS/ECUAL/BUTTON/BUTTON.c(51): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+7 warnings generated.
+compiling BUTTON.c...
+COTS/ECUAL/LED/LED.c(7): warning: In file included from...
+COTS/ECUAL/LED/LED.h(11): warning: In file included from...
+COTS/ECUAL/LED/../../MCAL/DIO/DIO.h(161): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/LED/LED.c(7): warning: In file included from...
+COTS/ECUAL/LED/LED.h(12): warning: In file included from...
+COTS/ECUAL/LED/../../MCAL/PORT/port.h(85): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/LED/LED.c(7): warning: In file included from...
+COTS/ECUAL/LED/LED.h(40): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+COTS/ECUAL/LED/LED.c(48): warning: implicit conversion from enumeration type 'Port_PinLevel' to different enumeration type 'Dio_LevelType' [-Wenum-conversion]
+        Dio_WriteChannel(PortId,pin,level);
+        ~~~~~~~~~~~~~~~~            ^~~~~
+COTS/ECUAL/LED/LED.c(48): warning: implicit conversion from enumeration type 'Port_Pin_x' to different enumeration type 'Dio_ChannelType' [-Wenum-conversion]
+        Dio_WriteChannel(PortId,pin,level);
+        ~~~~~~~~~~~~~~~~        ^~~
+COTS/ECUAL/LED/LED.c(49): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling LED.c...
+linking...
+Program Size: Code=2812 RO-data=652 RW-data=4 ZI-data=616  
+".\Objects\LED_Control_Project.axf" - 0 Error(s), 50 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/MohamedSalah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/MohamedSalah/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
